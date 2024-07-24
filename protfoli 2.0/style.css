@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    color: #334;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 900;
+    transition: 0.5s;
+
+}
+span{
+    color: orangered;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 0.5em;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+}
+
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    color: #444; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.content{
+    position: relative;
+    max-width: 700px;
+}
+.content h2{
+    font-size: 5.5em;
+    color: #333;
+    transition: 0.5s;
+}
+
+.content h2 span{
+    color: orangered;
+    font-size: 65px;
+}
+.content p{
+    font-size: 1.2em;
+    color: #000000;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content button{
+    position: relative;
+    background: orangered;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content button.chat{
+    background: transparent;
+    color:#333;
+}
+
+.dayNight{
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    width: 60px;
+    height: 60px;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.dayNight ion-icon:nth-child(2), 
+.banner.night .dayNight ion-icon:nth-child(1)
+{
+    display: none;
+}
+.banner.night .dayNight ion-icon:nth-child(2){
+    display: block;
+}
+.banner.night{
+    background: #333;
+}
+
+.banner.night .dayNight{
+    color: #fff;
+    background: #444;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night .a,
+header ul li a{
+    color: #fff;
+}
+header ul li a{
+    color: orangered;
+    font-size: large;
+    font-weight: 900;
+}
